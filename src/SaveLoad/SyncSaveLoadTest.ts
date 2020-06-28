@@ -1,6 +1,6 @@
 import {Entity} from "../TreeLib/Entity";
 import {EntireBeeMovieScript} from "./EntireBeeMovieScript";
-import {SyncSaveLoad} from "../TreeLib/SyncSaveLoad/SyncSaveLoad";
+import {SyncSaveLoad} from "./SyncSaveLoad";
 import {Logger} from "../TreeLib/Logger";
 import {InputManager} from "../TreeLib/InputManager/InputManager";
 import {InverseFourCC} from "../TreeLib/Misc";

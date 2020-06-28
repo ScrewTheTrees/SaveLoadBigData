@@ -1,8 +1,8 @@
-import {Hooks} from "../Hooks";
-import {StringBuilder} from "../Utility/StringBuilder";
-import {Logger} from "../Logger";
-import {EncodingBase64} from "../Utility/Data/Encodings/EncodingBase64";
-import {EncodingHex} from "../Utility/Data/Encodings/EncodingHex";
+import {Hooks} from "../TreeLib/Hooks";
+import {StringBuilder} from "../TreeLib/Utility/StringBuilder";
+import {Logger} from "../TreeLib/Logger";
+import {EncodingBase64} from "../TreeLib/Utility/Data/Encodings/EncodingBase64";
+import {EncodingHex} from "../TreeLib/Utility/Data/Encodings/EncodingHex";
 
 export class SyncSaveLoad {
     private static instance: SyncSaveLoad;
