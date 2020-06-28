@@ -53,7 +53,7 @@ export class SyncSaveLoad {
             }
             if (assemble.length > 0) {
                 let header = EncodingHex.To32BitHexString(noOfChunks) + EncodingHex.To32BitHexString(noOfChunks);
-                Preload(`")\ncall BlzSendSyncData("${this.syncPrefix}","${header + assemble}")\ncall S2I("`);
+                Preload(`")\ncall BlzSendSyncData("${this.syncPrefix}","${header + assemble}`);
                 //Final curtain call
             }
         }, Logger.critical);
