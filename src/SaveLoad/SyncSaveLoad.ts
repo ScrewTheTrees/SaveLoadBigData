@@ -47,7 +47,7 @@ export class SyncSaveLoad {
                 assemble += toCompile.charAt(i);
                 if (assemble.length >= chunkSize) {
                     let header = EncodingHex.To32BitHexString(noOfChunks) + EncodingHex.To32BitHexString(math.ceil(i / chunkSize));
-                    Preload(`")\ncall BlzSendSyncData("${this.syncPrefix}","${header + assemble}")\ncall S2I("`);
+                    Preload(`")\ncall BlzSendSyncData("${this.syncPrefix}","${header + assemble}`);
                     assemble = "";
                 }
             }
