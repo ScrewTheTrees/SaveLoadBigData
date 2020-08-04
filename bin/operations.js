@@ -70,6 +70,7 @@ switch (operation) {
         console.log(filename);
 
         execFile(config.gameExecutable, ["-loadfile", filename, ...config.launchArgs]);
+        console.log(...[config.gameExecutable,"-loadfile", filename, ...config.launchArgs]);
 
         break;
 
